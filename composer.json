@@ -1,0 +1,15 @@
+{
+    "name": "nikans/coordbot",
+    "type": "project",
+    "require": {
+        "php": ">=5.5.0",
+        "longman/telegram-bot": "*",
+        "rmccue/requests": ">=1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Coordbot\\": "src/",
+            "Rmccue\\Requests\\": "vendor/rmccue/requests/library/"
+        }
+    }
+}
