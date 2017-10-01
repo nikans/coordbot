@@ -136,7 +136,7 @@ class TelegramChatHandler {
 			$parameters['reply_to_message_id'] = $replyToId;
 		}
 		
-		$result = TelegramBot\Request::sendLocation($parameters);
+		$result = TelegramBot\Request::send('sendLocation', $parameters);
 		return $result;
 	}
 		
